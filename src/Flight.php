@@ -35,8 +35,11 @@ class Flight extends Model
         
         return MyClient::get('v1/shopping/flight-dates',$params);
     }
-
-    /*
+    public static function flightCitySearch($params){
+        
+        return MyClient::get('v1/reference-data/locations',$params);
+    }
+     /*
     The Flight Offers Search API allows to get cheapest flight recommendations and prices on a given journey. It provides a list of flight recommendations and fares from a given origin (city or airport), 
     for a given date (or date range) and for a given list of passengers. Additional information such as bag allowance, first ancillary bag prices or fare details are also provided.
     */
