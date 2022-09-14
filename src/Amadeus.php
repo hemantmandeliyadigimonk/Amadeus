@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\ServiceProvider;
 use ShaBax\Amadeus\Auth; //
 use ShaBax\Amadeus\Flight;
+use ShaBax\Amadeus\Hotel;
 
 class Amadeus extends Controller
 {
@@ -61,6 +62,37 @@ class Amadeus extends Controller
 	 public static function flightSeatMap($params)
 	 {
 		return Flight::flightSeatMap($params);
+	 }
+	 public static function flightCitySearch($params)
+	 {
+		return Flight::flightCitySearch($params);
+	 }
+
+	 //Hotel Search
+
+	 public static function hotelLowFareSearch($params)
+	 {
+		return Hotel::hotelLowFareSearch($params);
+	 }
+	 public static function hotelInspirationSearch($params)
+	 {
+		return Hotel::hotelInspirationSearch($params);
+	 }
+	 public static function hotelCheapestDateSearch($params)
+	 {
+		return Hotel::hotelCheapestDateSearch($params);
+	 }
+	 public static function hotelOffersSearch($params)
+	 {
+		return Hotel::hotelOffersSearch($params);
+	 }
+	 public static function hotelSeatMap($params)
+	 {
+		return Hotel::hotelSeatMap($params);
+	 }
+	 public static function hotelCitySearch($params)
+	 {
+		return Hotel::hotelCitySearch($params);
 	 }
 
 }
